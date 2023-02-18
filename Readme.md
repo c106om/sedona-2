@@ -56,3 +56,8 @@ git clone SSH-адрес_вашего_форка
 
 [check-image]: https://github.com/htmlacademy-adaptive/{{userId}}-{{projectName}}/workflows/Project%20check/badge.svg?branch=master
 [check-url]: https://github.com/htmlacademy-adaptive/{{userId}}-{{projectName}}/actions
+
+В подготовленной автоматизации находятся три команды:
+npm run lint /запускает тест editorconfig и stylelint;
+npm start /запускает browsersync и следит за изменениями стилей и вёрстки;
+npm run build /запускает компиляцию выбранного препроцессора.
