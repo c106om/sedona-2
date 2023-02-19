@@ -3,18 +3,24 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <title>«Седона»</title>
 </head>
 
-<body class="page__body">
+<body class="page__body body">
 
-  <header class="page-header">
-    <a href="index.html" class="page-header__logo">
+  <header class="page__header header">
+    <a class="header__logo" href="index.html">
       <img src="img/logo/logotype-mobile.svg" alt="Логотип «Седона»" height="84" width="102">
     </a>
-    <nav class="main-nav">
+    <nav class="header__main-nav main-nav">
       <button class="main-nav__button">
         <span class="visually-hidden">Открыть меню</span>
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+        </svg>
       </button>
       <div class="main-nav__wrapper">
         <ul class="menu-list">
@@ -35,12 +41,17 @@
     </nav>
   </header>
 
-  <main class="page-main">
-    <article class="page-main__advantage advantage">
-      <header class="advantage__header">
-        <h1 class="advantage__haed">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="advantage__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </header>
+  <main class="page__main main">
+    <div class="main__big-banner">
+      <img src="img/welcome.svg" alt="welcome" height="28" width="116">
+      <img src="img/to-the-gorgeous.svg" alt="- to the gorgeous -" height="19" width="109">
+      <img src="img/sedona.svg" alt="Седона" height="49" width="282">
+      <img src="img/because-the-grand-canyon-sucks.svg" alt="because the grand canyon sucks" height="46" width="174">
+    </div>
+    <article class="main__advantage advantage">
+      <h1 class="advantage__haed">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="advantage__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
       <ol class="advantage__n-list">
         <li class="advantage__n advantage__n--1">
           <div class="advantage__intro">
@@ -95,7 +106,7 @@
         </li>
       </ol>
     </article>
-    <aside class="page-main__search-query search-query">
+    <aside class="main__search-query search-query">
       <h2 class="search-query__head">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
       <p class="search-query__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
@@ -103,21 +114,22 @@
         НАЙТИ гостиницу
       </button>
     </aside>
-    <div class="page-main__map map">
+    <div class="main__map map">
       <h2 class="visually-hidden">Карта местности</h2>
-      <img src="img/map-mobile.jpg" alt="Карта">
-      <svg class="map__marker" width="27" height="27">
-        <use xlink:href="img/map__marker#marker27"></use>
+      <img class="map__img" src="img/pict/map-mobile.jpg" alt="Карта">
+      <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="none">
+        <path fill="#fff" d="M13.5 27a13.5 13.5 0 1 0 0-27 13.5 13.5 0 0 0 0 27Z"/>
+        <path fill="#81B3D3" d="M13.5 21.9a8.4 8.4 0 1 0 0-16.8 8.4 8.4 0 0 0 0 16.8Z"/>
       </svg>
     </div>
   </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__hashtag">
+  <footer class="page__footer footer">
+    <div class="footer__wrapper">
+      <div class="footer__hashtag">
         #visitSEDONA
       </div>
-      <div class="page-footer__social social">
+      <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Твиттер</a>
@@ -130,13 +142,12 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
-
 
 </body>
 

@@ -3,16 +3,17 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <title>«Седона»</title>
 </head>
 
-<body class="page__body">
+<body class="page__body body">
 
-  <header class="page-header">
-    <a href="index.html" class="page-header__logo">
+  <header class="page__header header">
+    <a class="header__logo" href="index.html">
       <img src="img/logo/logotype-mobile.svg" alt="Логотип «Седона»" height="84" width="102">
     </a>
-    <nav class="main-nav">
+    <nav class="header__main-nav main-nav">
       <button class="main-nav__button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -35,15 +36,16 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page__main main">
 
-    <header class="page-main__banner banner">
+    <div class="main__banner">
       <img src="img/sedona.svg" alt="sedona" width="282" height="49">
-      <h1>Фото и видео</h2>
-      <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-    </header>
+    </div>
+    <h1>Фото и видео</h2>
+    <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
 
-    <article class="page-main__foto foto">
+
+    <article class="main__foto foto">
       <div class="foto__card card">
         <img class="card__img" src="img/photo/photo-1-mobile.jpg" alt="Фрто №1">
         <b class="card__b">неродные просторы</b>
@@ -69,7 +71,7 @@
         <em class="card__em">254</em>
       </div>
     </article>
-    <aside class="page-main__video">
+    <aside class="main__video">
       <b>Все еще сомневаетесь?</b>
       <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <video src="" width="320" height="200" controls="controls" poster="img/photo/video-mobile.jpg"></video>
@@ -78,12 +80,12 @@
 
   </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__hashtag">
+  <footer class="page__footer footer">
+    <div class="footer__wrapper">
+      <div class="footer__hashtag">
         #visitSEDONA
       </div>
-      <div class="page-footer__social social">
+      <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Твиттер</a>
@@ -96,7 +98,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>

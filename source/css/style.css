@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  margin: 0;
+  border: none;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+span,
+b,
+li {
+  margin: 0;
+  padding: 0;
+}
+/* menu mob */
+/* главное меню nain-menu-color*/
+/* кнопки фон и текст */
+/* поля формы */
+/* логотип htmlAcademy */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+/* начало */
+.body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page {
+  height: 100%;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.page__body {
+  min-height: 100%;
+  margin: 0 auto;
+}
+.page__main {
+  flex-grow: 1;
+}
+.page__header {
+  color: #000000;
+}
+.page__footer {
+  color: #000000;
+}
+.header {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  outline: 1px dashed #2389fc;
+  position: relative;
+}
+.header__logo {
+  margin-left: calc(50% - 51px);
+}
+.header__main-nav {
+  margin: 17px 0;
+}
+.main-nav__wrapper {
+  display: none;
+  position: absolute;
+}
+.main {
+  color: #000000;
+}
+.main__big-banner {
+  width: 100%;
+  height: 389px;
+  background: url("../img/intro-triangle.svg") bottom no-repeat, url("../img/photo/back-mobile.jpg.jpg") center no-repeat;
+  background-color: #81b3d2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.advantage {
+  color: #000000;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */

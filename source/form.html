@@ -3,16 +3,17 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <title>«Седона»</title>
 </head>
 
-<body class="page__body">
+<body class="page__body body">
 
-  <header class="page-header">
-    <a href="index.html" class="page-header__logo">
+  <header class="page__header header">
+    <a class="header__logo" href="index.html">
       <img src="img/logo/logotype-mobile.svg" alt="Логотип «Седона»" height="84" width="102">
     </a>
-    <nav class="main-nav">
+    <nav class="header__main-nav main-nav">
       <button class="main-nav__button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -35,14 +36,15 @@
     </nav>
   </header>
 
-  <main class="page-main">
-    <header class="page-main__banner banner">
+  <main class="page__main main">
+
+    <header class="main__banner banner">
       <img src="img/sedona.svg" alt="sedona" width="282" height="49">
-      <h1>Оставьте свой отзыв</h1>
+      <h1>Оставьте свой отзыв</h2>
       <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
 
-    <form class="page-main__form form" action="https://echo.htmlacademy.ru/" method="get">
+    <form class="main__form form" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="form__fieldset">
         <legend class="form__title">Представьтесь:</legend>
         <label class="form__name" for="name">ИМЯ*:</label>
@@ -66,17 +68,17 @@
       <fieldset class="form__fieldset">
         <legend class="form__title">ВАше Общее впечатление:</legend>
         <label class="form__name">
-          <input class="visually-hidden form__radio" type="radio" id="r1" name="radio" value="plus" checked>
+          <input class="visually-hidden form__check form__check--radio" type="radio" id="r1" name="radio" value="plus" checked>
           <span class="form__mark"></span>
           <span class="form__label">Скорее положительное</span>
         </label>
         <label class="form__name">
-          <input class="visually-hidden form__radio" type="radio" id="r2" name="radio" value="minus">
+          <input class="visually-hidden form__check form__check--radio" type="radio" id="r2" name="radio" value="minus">
           <span class="form__mark"></span>
           <span class="form__label">Скорее отрицательное</span>
         </label>
         <label class="form__name">
-          <input class="visually-hidden form__radio" type="radio" id="r3" name="radio" value="none">
+          <input class="visually-hidden form__check form__check--radio" type="radio" id="r3" name="radio" value="none">
           <span class="form__mark"></span>
           <span class="form__label">Затрудняюсь ответить</span>
         </label>
@@ -86,26 +88,25 @@
         <legend class="form__title">посещенные достопримечательности:</legend>
 
         <label class="form__name">
-          <input class="form__check" type="checkbox" id="ch1" name="bridg" checked>
+          <input class="visually-hidden form__check" type="checkbox" id="ch1" name="bridg" checked>
           <span class="form__mark"></span>
           <span class="form__label">Мост Дьявола</span>
         </label>
 
         <label class="form__name">
-          <input class="form__check" type="checkbox" id="ch2" name="mountain" checked>
+          <input class="visually-hidden form__check" type="checkbox" id="ch2" name="mountain" checked>
           <span class="form__mark"></span>
           <span class="form__label">Гора-Колокол</span>
         </label>
 
-
         <label class="form__name">
-          <input class="form__check" type="checkbox" id="ch3" name="park" checked>
+          <input class="visually-hidden form__check" type="checkbox" id="ch3" name="park" checked>
           <span class="form__mark"></span>
           <span class="form__label">Слайд-парк</span>
         </label>
 
         <label class="form__name">
-          <input class="form__check" type="checkbox" id="ch4" name="rocks">
+          <input class="visually-hidden form__check" type="checkbox" id="ch4" name="rocks">
           <span class="form__mark"></span>
           <span class="form__label">Красные скалы</span>
         </label>
@@ -123,12 +124,12 @@
 
   </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__hashtag">
+  <footer class="page__footer footer">
+    <div class="footer__wrapper">
+      <div class="footer__hashtag">
         #visitSEDONA
       </div>
-      <div class="page-footer__social social">
+      <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Твиттер</a>
@@ -141,13 +142,12 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
-
 
   <div class="modal">
     <div class="modal__success">
