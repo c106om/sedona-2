@@ -16,20 +16,28 @@
     <nav class="header__main-nav main-nav">
       <button class="main-nav__button">
         <span class="visually-hidden">Открыть меню</span>
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+        </svg>
       </button>
       <div class="main-nav__wrapper">
         <ul class="menu-list">
           <li class="menu-list__item menu-list__item--active">
-            <a href="index.html" class="menu-list__link">Главная</a>
+            <a class="menu-list__link" href="index.html">Главная</a>
+            <svg class="menu-list__item-svg" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none">
+              <path fill="#ffffff" d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"/>
+            </svg>
           </li>
           <li class="menu-list__item">
-            <a href="catalog.html" class="menu-list__link">Фото и видео</a>
+            <a class="menu-list__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="menu-list__item">
-            <a href="form.html" class="menu-list__link">Форма Отзыва</a>
+            <a class="menu-list__link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="menu-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="menu-list__link">HTML ACADEMY</a>
+            <a class="menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
       </div>
@@ -37,13 +45,9 @@
   </header>
 
   <main class="page__main main">
-
-    <div class="main__banner">
-      <img src="img/sedona.svg" alt="sedona" width="282" height="49">
-    </div>
-    <h1>Фото и видео</h2>
-    <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-
+    <div class="main__banner"></div>
+    <h1 class="main__haed">Фото и видео</h2>
+    <p class="main__text">Не можете решиться на путешествие<br> из-за курса? Фотографии помогут вам<br> забыть о политике и экономике.</p>
 
     <article class="main__foto foto">
       <div class="foto__card card">
@@ -75,34 +79,53 @@
       <b>Все еще сомневаетесь?</b>
       <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <video src="" width="320" height="200" controls="controls" poster="img/photo/video-mobile.jpg"></video>
-
     </aside>
 
   </main>
 
   <footer class="page__footer footer">
-    <div class="footer__wrapper">
+    <!-- <div class="footer__wrapper"> -->
       <div class="footer__hashtag">
         #visitSEDONA
       </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Твиттер</a>
+      <div class="footer__social">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link footer__link--twitter" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Твиттер</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="none">
+                <path fill="#fff" d="M11.3.17c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4Z"/>
+              </svg>
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          <li class="footer__item">
+            <a class="footer__link footer__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Фейсбук</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="19" fill="none">
+              <path fill="#fff" d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7Z"/>
+            </svg>
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">YouTube</a>
+          <li class="footer__item">
+            <a class="footer__link footer__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <span class="visually-hidden">YouTube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+              <path fill="#fff" d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6 0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7 7 10.4Z"/>
+            </svg>
+          </a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="footer__copyright">
+        <b>Разработано</b>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+          <svg class="footer__copyright-svg" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none">
+            <path fill="#000" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
+          </svg>
+        </a>
       </div>
-    </div>
+    <!-- </div> -->
   </footer>
 
 </body>

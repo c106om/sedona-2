@@ -1,0 +1,67 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__hashtag {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 30px;
+}
+
+.footer__list {
+  margin: 35px 0 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.footer__item {
+  width: 48px;
+  height: 48px;
+  background-color: @normal;
+  padding-top: 12px;
+}
+
+.footer__item:hover {
+  background-color: @bc-hover;
+}
+
+.footer__item:focus-within,
+.footer__item:active {
+  background-color: @bc-down;
+
+  svg path {
+    fill: @fc-down;
+  }
+
+  a {
+    outline: none;
+  }
+}
+
+.footer__link {
+  padding: 25%;
+}
+
+.footer__copyright {
+  display: flex;
+  font-size: 14px;
+  line-height: 26px;
+
+  margin-bottom: 26px;
+
+  b {
+    padding: 0 20px;
+  }
+}
+
+.footer__copyright-svg:hover path {
+  fill: @acad-logo-hover;
+}
+
+.footer__copyright-svg:active path {
+  fill: @acad-logo-down;
+}

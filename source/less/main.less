@@ -1,14 +1,84 @@
 .main {
-  color: #000000;
+  font: inherit;
 }
 
 .main__big-banner {
   width: 100%;
   height: 389px;
-  background: url("../img/intro-triangle.svg") bottom no-repeat, url("../img/photo/back-mobile.jpg.jpg") center no-repeat;
+  background: url("../img/welcome.svg") 50% 90px no-repeat, url("../img/to-the-gorgeous.svg") 50% 120px no-repeat, url("../img/sedona.svg") center no-repeat, url("../img/because-the-grand-canyon-sucks.svg") 50% 75% no-repeat, url("../img/intro-triangle.svg") bottom no-repeat, url("../img/photo/back-mobile.jpg") center no-repeat;
   background-color: @bmm-normal;
+}
+
+.main__banner {
+  width: 100%;
+  height: 214px;
+  background: url("../img/sedona.svg") center no-repeat, url("../img/intro-triangle.svg") bottom no-repeat, url("../img/photo/back-mobile-2.jpg") center no-repeat;
+  background-color: @bmm-normal;
+}
+
+.main__haed {
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.main__text {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.card {
+  text-align: left;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+}
+
+.card__b {
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.card__p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333333;
+}
+
+.card__em {
+  padding: 10px 0 15px 35px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  font-style: normal;
+  background-image: url("../img/icon/like-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+}
+
+.main__video {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.main__video b {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.main__video p {
+  margin: 30px 0;
+  font-size: 14px;
+  line-height: 24px;
 }

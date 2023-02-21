@@ -1,3 +1,134 @@
 .advantage {
-  color: #000000;
+  font: inherit;
+}
+
+.advantage__n--1 .advantage__intro {
+  padding-top: 40px;
+  height: 230px;
+  background: url("../img/intro-triangle-2.svg") top no-repeat;
+  background-color: @normal;
+  color: #ffffff;
+}
+
+.advantage__n--2 .advantage__intro {
+  height: 190px;
+  background-color: @normal;
+  color: #ffffff;
+}
+
+.advantage__n--3 .advantage__intro,
+.advantage__n--4 .advantage__intro,
+.advantage__n--5 .advantage__intro {
+  height: 190px;
+  background-color: #eeeeee;
+}
+
+.advantage__intro {
+  padding: 0 20px;
+
+  h2 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  b,
+  p {
+    font-size: 14px;
+    line-height: 26px;
+
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+}
+
+.advantage__item {
+  text-align: left;
+  padding-top: 10px;
+
+  h3 {
+    margin: 25px 20px 0 70px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  p {
+    margin: 15px 20px 0 70px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+.advantage__item--hous {
+  padding-top: 10px;
+  background-image: url("../img/pict/icon-house.svg");
+  background-position: 20px 30px;
+  background-repeat: no-repeat;
+}
+
+.advantage__item--gift {
+  background-image: url("../img/pict/icon-gift.svg");
+  background-position: 25px 20px;
+  background-repeat: no-repeat;
+}
+
+.advantage__item--food {
+  background-image: url("../img/pict/icon-burger.svg");
+  background-position: 20px 30px;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
+
+.advantage__query {
+  padding: 35px 20px 50px 20px;
+}
+
+.advantage__query-head {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.advantage__query-text {
+  margin: 30px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.advantage__query-button {
+  width: 100%;
+  height: 58px;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  background-color: @bc-normal;
+  color: @fc-normal;
+}
+
+.advantage__query-button:hover {
+  background-color: @bc-hover;
+  color: @fc-hover;
+}
+
+.advantage__query-button:active {
+  background-color: @bc-down;
+  color: @fc-down;
+}
+
+.advantage__map {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+  }
 }
