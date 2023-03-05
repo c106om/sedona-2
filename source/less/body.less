@@ -1,6 +1,29 @@
 .body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  min-width: 320px; // лучше задать на body, чтобы не выпадали фоны
 
+  .body__container {
+    //box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 330px;
+
+    width: auto;
+    padding: 0 15px;
+  }
+
+  @media (min-width: 704px) { //768px
+    .body__container {
+      width: auto;
+      padding: 0 24px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .body__container {
+      width: 1200px; // на десктопе контент обычно фиксированной ширины
+      padding: 0 120px; // не забываем про отступы контента от краёв
+    }
+  }
+}

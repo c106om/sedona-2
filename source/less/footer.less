@@ -51,7 +51,7 @@
   font-size: 14px;
   line-height: 26px;
 
-  margin-bottom: 26px;
+  margin: 0 auto 26px auto;
 
   b {
     padding: 0 20px;
@@ -64,4 +64,26 @@
 
 .footer__copyright-svg:active path {
   fill: @acad-logo-down;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    width: 100%;
+    padding: 0 5%;
+    flex-direction: row;
+    //flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+
+
+    &__hashtag,
+    &__copyright {
+      margin-top: 50px;
+    }
+
+    &__list {
+      flex-grow: 1;
+    }
+  }
 }

@@ -10,6 +10,10 @@
 
 .header__logo {
   width: 102px;
+  height: 84px;
+  background-image: url("../img/logo/logotype-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   grid-column: 2 / 3;
 }
 
@@ -17,63 +21,205 @@
   justify-self: end;
 }
 
-.main-nav__button {
-  padding: 17px 0;
-
-
-  :hover path {
-    fill: @bmm-hover;
-  }
-
-  :active path {
-    fill: @bmm-down;
-  }
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.main-nav__button:focus + .main-nav__wrapper {
-  display: block;
-}
-
-.main-nav__wrapper {
+.header__main-nav.main-nav--nojs .main-nav__button {
   display: none;
+}
+
+.main-nav--closed .main-nav__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 55px;
+  height: 55px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    width: 22px;
+    height: 4px;
+    background-color: @bmm-normal;
+    box-shadow: 0 9px 0 0 @bmm-normal, 0 18px 0 0 @bmm-normal;
+  }
+
+  &:hover::before {
+    background-color: @bmm-hover;
+    box-shadow: 0 9px 0 0 @bmm-hover, 0 18px 0 0 @bmm-hover;
+  }
+
+  &:active::before {
+    background-color: @bmm-down;
+    box-shadow: 0 9px 0 0 @bmm-down, 0 18px 0 0 @bmm-down;
+  }
+}
+
+.main-nav--opened .main-nav__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 55px;
+  height: 55px;
+  background-color: @bmm-normal;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 10px;
+    width: 36px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    // box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(#ffffff, 60%);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+.main-nav.main-nav--closed .main-nav__wrapper {
+  display: none;
+  width: 100%;
   position: absolute;
   left: 0;
   top: 0;
 }
 
-.menu-list__item {
-  width: 320px;
+.main-nav.main-nav--opened .main-nav__wrapper {
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main-nav__item {
   height: 55px;
   padding: 15px 10% 0;
+  margin: 0 auto;
   background-color: @bmm-normal;
   box-shadow: 0 1px 0 0 #01010133, 0 1px 0 0 #ffffff33 inset;
 }
 
-.menu-list__link {
+.main-nav__link {
   color: @fmm-normal;
 }
 
-.menu-list__link:hover {
+.main-nav__link:hover {
   color: @fmm-hover;
+
+  .user-login-icon {
+    opacity: 0.3;
+  }
 }
 
-.menu-list__link:active {
+.main-nav__link:active {
   color: @fmm-down;
+
+  .user-login-icon {
+    opacity: 0.6;
+  }
 }
 
-.menu-list__item-svg {
-  position: absolute;
-  box-sizing: content-box;
-  top: 15px;
-  right: 20px;
-  cursor: pointer;
-  padding: 5px;
+.user-login-icon {
+  position: relative;
+  top: 0;
+  left: -20px;
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
 }
 
-.menu-list__item-svg:hover path {
-  fill: @fmm-hover;
+
+@media (min-width: 704px) {
+  .header__main-nav .main-nav__button {
+    display: none;
+  }
+
+  .header__main-nav.main-nav .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav__list {
+    width: auto;
+    margin: 0 auto;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 187px 1fr 1fr;
+  }
+
+  .main-nav__item {
+    padding: 15px 0;
+    margin: 0;
+    height: auto;
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  .main-nav__item:nth-child(3) {
+    grid-column: 4/5;
+  }
+
+  .main-nav__item--active .main-nav__link {
+    color: #766357;
+  }
+
+  .main-nav__link {
+    color: @mmc-normal;
+  }
+
+  .main-nav__link:hover {
+    color: @mmc-hover;
+  }
+
+  .main-nav__link:active {
+    color: @mmc-down;
+  }
 }
 
-.menu-list__item-svg:active path {
-  fill: @fmm-down;
+@media (min-width: 1200px) {
+  .header__logo {
+    width: 187px;
+    height: 97px;
+    background-image: url("../img/logo/logotype-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .main-nav__item {
+    font-size: 15px;
+  }
 }
