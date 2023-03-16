@@ -1,0 +1,15 @@
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="exit-icon" viewBox="0 0 16 16">
+      <polygon points="0 7 7 7 7 4 11 8 7 12 7 9 0 9 0 7"/>
+      <polygon points="7 0 7 2 14 2 14 14 7 14 7 16 16 16 16 0 7 0"/>
+    </symbol>
+    <symbol id="facebook-icon" viewBox="0 0 9 19">
+      <path fill="#fff" d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7Z"/>
+    </symbol>
+    <symbol id="icon-like" viewBox="0 0 23 21">
+      <path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/>
+    </symbol>
+    <symbol id="marker" viewBox="0 0 27 27">
+      <path fill="#ffffff66" d="M13.5 27a13.5 13.5 0 1 0 0-27 13.5 13.5 0 0 0 0 27Z"/><path fill="#81B3D399" d="M13.5 21.9a8.4 8.4 0 1 0 0-16.8 8.4 8.4 0 0 0 0 16.8Z"/>
+    </symbol>
+  </svg>
